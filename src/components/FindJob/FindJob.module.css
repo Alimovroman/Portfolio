@@ -1,0 +1,9 @@
+.FindJobBlock {
+    height: 180px;
+    background-color: #79bea6;
+}
+.FindJobContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
