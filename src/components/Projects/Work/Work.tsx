@@ -9,8 +9,8 @@ type PropsType ={
 const Work: FC<PropsType> = ({title, image, description}) => {
     return (
         <div className={style.workItem}>
-            <div className={style.image}>
-                <img src={image} alt={'image'} />
+            <div className={style.imageContainer}>
+                <a href={'#'}>Посмотреть</a>
             </div>
             <h3>{title}</h3>
             <span>{description}</span>

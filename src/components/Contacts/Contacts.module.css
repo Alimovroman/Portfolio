@@ -5,10 +5,24 @@
 .contactsContainer {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+}
+.title {
+    background-color: #e39090;
 }
 .form {
     display: flex;
     flex-direction: column;
     width: 400px;
+}
+
+@media (max-width: 510px) {
+    .form {
+        width: 300px;
+    }
+}
+@media (max-width: 390px) {
+    .form {
+        width: 250px;
+    }
 }

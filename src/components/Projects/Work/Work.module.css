@@ -1,4 +1,16 @@
 .workItem {
     border: 1px solid hotpink;
-    width: 450px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.imageContainer {
+    width: 200px;
+    height: 200px;
+    background-color: #ef9bc8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

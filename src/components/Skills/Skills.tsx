@@ -12,6 +12,10 @@ const Skills = () => {
                     <Skill title={'React'} info={'Skill info'}/>
                     <Skill title={'HTML'} info={'Skill info'}/>
                     <Skill title={'CSS'} info={'Skill info'}/>
+                    <Skill title={'CSS'} info={'Skill info'}/>
+                    <Skill title={'CSS'} info={'Skill info'}/>
+                    <Skill title={'CSS'} info={'Skill info'}/>
+                    <Skill title={'CSS'} info={'Skill info'}/>
                 </div>
             </div>
         </div>
