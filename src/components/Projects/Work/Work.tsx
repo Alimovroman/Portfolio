@@ -1,19 +1,24 @@
 import React, {FC} from 'react';
 import style from  './Work.module.css'
+import styleContainer from "../../../common/styles/Container.module.css";
+import Button from "../../../common/Button/Button";
 
 type PropsType ={
     title: string
-    image: string
     description: string
+    style: {
+        backgroundImage: string
+    }
 }
-const Work: FC<PropsType> = ({title, image, description}) => {
+const Work: FC<PropsType> = (props) => {
     return (
         <div className={style.workItem}>
-            <div className={style.imageContainer}>
-                <a href={'#'}>Посмотреть</a>
+            <div className={style.imageContainer} style={props.style}>
+                {/*<a href={'#'}>Посмотреть</a>*/}
+                <Button title={'Посмотреть'} />
             </div>
-            <h3>{title}</h3>
-            <span>{description}</span>
+            <h5 className={styleContainer.itemTitle}>{props.title}</h5>
+            <span className={styleContainer.description}>{props.description}</span>
         </div>
     );
 };

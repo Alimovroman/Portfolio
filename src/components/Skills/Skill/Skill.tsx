@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import style from './Skill.module.css'
+import styleContainer from "../../../common/styles/Container.module.css";
 
 type PropsType = {
     title: string
@@ -9,8 +10,8 @@ const Skill: FC<PropsType> = ({title, info}) => {
     return (
         <div className={style.skillBlock}>
             <div className={style.icon}></div>
-            <h3>{title}</h3>
-            <span className={style.description}>
+            <span className={styleContainer.itemTitle}>{title}</span>
+            <span className={styleContainer.description}>
                 {info}
             </span>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import style from './App.module.css';
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Skills from "./components/Skills/Skills";
@@ -10,12 +10,16 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
-        <div className="App">
+        <div className={style.app}>
             <Header/>
             <Main/>
+            <div className={style.emptyBlock}/>
             <Skills />
+            <div className={style.emptyBlock}/>
             <Projects />
+            <div className={style.emptyBlock}/>
             <FindJob />
+            <div className={style.emptyBlock}/>
             <Contacts />
             <Footer />
         </div>

@@ -1,9 +1,6 @@
 .mainBlock {
     height: 100vh;
-    background-color: #f1afd0;
     display: flex;
-
-
 }
 .mainContainer {
     justify-content: space-around;

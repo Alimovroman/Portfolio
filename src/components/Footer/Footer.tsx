@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h2 className={style.title}>Roman Alimov</h2>
+                <h2 className={`${styleContainer.title} ${style.title}`}>Roman Alimov</h2>
                 <div className={style.socialNetworks}>
                     <div className={style.imgItem}>
                         <img src={'#'} alt={'hh'} />
@@ -21,7 +21,7 @@ const Footer = () => {
                         <img src={'#'} alt={'hh'} />
                     </div>
                 </div>
-                <span>2023 все права защищены</span>
+                <span className={style.description}>2023 все права защищены</span>
             </div>
         </div>
     );

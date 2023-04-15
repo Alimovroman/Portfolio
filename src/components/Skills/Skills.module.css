@@ -1,21 +1,21 @@
 .skillsBlock {
     min-height: 100vh;
-    background-color: #c9bebe;
+
 }
 .skillsContainer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    /*min-height: inherit;*/
 }
-.title {
-    background-color: lavender;
-}
+
 .skills {
     display: flex;
-    background-color: lavender;
+    /*background-color: lavender;*/
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+    /*align-items: flex-start;*/
 }
 
 @media (max-width: 624px) {

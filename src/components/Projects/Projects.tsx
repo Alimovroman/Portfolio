@@ -2,15 +2,31 @@ import React from 'react';
 import style from './Projects.module.css';
 import styleContainer from './../../common/styles/Container.module.css';
 import Work from "./Work/Work";
+import Title from "../../common/Title/Title";
+import socialNetworkImg from '../../assets/images/social-network.jpg'
+import todolistImg from '../../assets/images/todolist.png'
+
+const socialNetwork = {
+    backgroundImage: `url(${socialNetworkImg})`,
+};
+const todolist = {
+    backgroundImage: `url(${todolistImg})`,
+};
 
 const Projects = () => {
     return (
         <div className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-                <h2 className={style.title}>Мои работы</h2>
+                <Title title={'Мои работы'} />
                 <div className={style.projects}>
-                    <Work title={'Project-1'} image={'#'} description={'ololololo lol ol o olo'} />
-                    <Work title={'Project-2'} image={'#'} description={'ololololo lol ol o olo'} />
+                    <Work title={'Social Network'}
+                          description={'ololololo lol ol o olo'}
+                          style={socialNetwork}
+                    />
+                    <Work title={'Todolist'}
+                          description={'ololololo lol ol o olo'}
+                          style={todolist}
+                    />
                 </div>
             </div>
         </div>
