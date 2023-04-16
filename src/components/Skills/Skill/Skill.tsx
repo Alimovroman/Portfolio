@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
-import style from './Skill.module.css'
-import styleContainer from "../../../common/styles/Container.module.css";
+import style from './Skill.module.scss'
+import styleContainer from "../../../common/styles/Container.module.scss";
 
 type PropsType = {
     title: string

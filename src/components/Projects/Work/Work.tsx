@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
-import style from  './Work.module.css'
-import styleContainer from "../../../common/styles/Container.module.css";
+import style from './Work.module.scss'
+import styleContainer from "../../../common/styles/Container.module.scss";
 import Button from "../../../common/Button/Button";
 
 type PropsType ={

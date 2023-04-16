@@ -9,14 +9,13 @@
     padding: 20px;
     box-sizing: border-box;
     padding-top: 71px;
-
-
+    .icon {
+        width: 80%;
+        height: 85%;
+        /*background-color: #e39090;*/
+        /*overflow: hidden;*/
+        box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+        border: 15px solid #fff;
+    }
 }
-.icon {
-    width: 80%;
-    height: 85%;
-    /*background-color: #e39090;*/
-    /*overflow: hidden;*/
-    box-shadow: 2px 2px 7px rgba(0,0,0,.2);
-    border: 15px solid #fff;
-}
+

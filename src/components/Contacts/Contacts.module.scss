@@ -1,0 +1,24 @@
+.contactsBlock {
+    height: 100vh;
+    .contactsContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        @media (max-width: 510px) {
+                width: 300px;
+        }
+        @media (max-width: 390px) {
+                width: 250px;
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,17 @@
+@import '../../common/styles/sass/variables';
+
+.button {
+  border: none;
+  background-color: inherit;
+  color: $textColor;
+  font-family: Montserrat,serif;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.4s ease-out;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    color: $textColorHover;
+  }
+}

@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import styleContainer from "../styles/Container.module.css";
+import style from './Title.module.scss';
 
 type Props = {
     title: string
@@ -7,7 +7,7 @@ type Props = {
 const Title:FC<Props> = ({title}) => {
     return (
         <div>
-            <h2 className={styleContainer.title}>{title}</h2>
+            <h2 className={style.title}>{title}</h2>
         </div>
     );
 };
