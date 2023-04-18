@@ -1,3 +1,6 @@
+@import "../../common/styles/sass/mixins";
+@import "../../common/styles/sass/variables";
+
 .mainBlock {
     height: 100vh;
     display: flex;
@@ -5,8 +8,10 @@
         justify-content: space-around;
         align-items: center;
         .text {
-            background-color: #c9bebe;
             width: 300px;
+            .aboutMeText {
+                @include text(grey, 15px, 28px, 400, $textFontFamily)
+            }
         }
         .photo {
             background-color: #afa7a7;

@@ -1,4 +1,5 @@
 @import "../styles/sass/variables";
+@import "../styles/sass/mixins";
 
 .container {
     width: 80%;
@@ -12,17 +13,9 @@
 
 
 .itemTitle {
-    color: $textColor;
-    font-size: 18px;
-    line-height: 1.5555555555555555555555555555556em;
-    font-weight: 700;
-    font-family: Montserrat,serif;
+    @include text($textColor, 18px, 1.5em, 700, $titleFontFamily);
 }
 .description {
-    color: $descriptionColor;
-    font-size: 15px;
-    line-height: 1.8666666666666666666666666666667em;
-    font-weight: 400;
+    @include text($descriptionColor, 15px, 1.8em, 400, $textFontFamily);
     font-style: italic;
-    font-family: 'Open Sans',sans-serif
 }

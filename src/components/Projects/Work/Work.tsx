@@ -10,12 +10,16 @@ type PropsType ={
         backgroundImage: string
     }
 }
+
+const styleButton = {
+    background: 'white'
+}
 const Work: FC<PropsType> = (props) => {
     return (
         <div className={style.workItem}>
             <div className={style.imageContainer} style={props.style}>
                 {/*<a href={'#'}>Посмотреть</a>*/}
-                <Button title={'Посмотреть'} />
+                <Button title={'Посмотреть'} style={styleButton}/>
             </div>
             <h5 className={styleContainer.itemTitle}>{props.title}</h5>
             <span className={styleContainer.description}>{props.description}</span>
