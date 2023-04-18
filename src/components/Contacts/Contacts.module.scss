@@ -13,7 +13,7 @@
   .form {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 540px;
 
 
     .inputWrapper {
@@ -41,11 +41,13 @@
       }
     }
 
-
-    @media (max-width: 510px) {
+    @media (max-width: 910px) {
+      width: 400px;
+    }
+    @media (max-width: 577px) {
       width: 300px;
     }
-    @media (max-width: 390px) {
+    @media (max-width: 460px) {
       width: 250px;
     }
 
