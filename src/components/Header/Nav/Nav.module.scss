@@ -2,10 +2,11 @@
 @import '../../../common/styles/sass/mixins';
 
 .nav {
-    //border: 1px solid;
-    width: 320px;
+    //width: 320px;
+    width: 620px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
     a {
         @include text($textColor, 15px, 28px, 700, $textFontFamily);
         text-decoration: none;

@@ -1,6 +1,22 @@
-.header {
-    height: 80px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.headerContainer {
+    height: 43px;
+    .header {
+        height: inherit;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: white;
+        @media (max-width: 976px) {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            //box-shadow: 1px 1px 6px rgba(0,0,0,.2);
+            z-index: 10;
+            @media (max-width: 376px) {
+                justify-content: center;
+            }
+        }
+
+    }
 }
