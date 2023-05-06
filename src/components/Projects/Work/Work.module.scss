@@ -1,3 +1,6 @@
+@import "../../../common/styles/sass/mixins";
+@import "../../../common/styles/sass/variables";
+
 .workItem {
     width: 50%;
     height: 382px;
@@ -29,6 +32,13 @@
             right: 0;
             opacity: 0.4;
         }
+    }
+    .itemTitle {
+        @include text($textColor, 18px, 1.5em, 700, $titleFontFamily);
+    }
+    .description {
+        @include text($descriptionColor, 15px, 1.8em, 400, $textFontFamily);
+        font-style: italic;
     }
     @media (max-width: 750px) {
         width: 100%;

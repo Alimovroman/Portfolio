@@ -1,58 +1,59 @@
 @import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
 
 .contactsBlock {
   //height: 100vh;
-
   .contactsContainer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    @include container();
+    @include flex(column, flex-start, center, wrap);
     padding: 70px 0;
-  }
 
-  .form {
-    display: flex;
-    flex-direction: column;
-    width: 540px;
+    .form {
+      display: flex;
+      flex-direction: column;
+      width: 540px;
 
 
-    .inputWrapper {
-      margin-bottom: 10px;
+      .inputWrapper {
+        margin-bottom: 10px;
 
-      input {
-        width: 100%;
-        border: 1px solid #4a4a4a;
-        font-size: 12px;
-        padding: 0 15px;
-        border-radius: 0;
-        height: calc(1.5em + 0.75rem + 2px);
-        font-family: $textFontFamily;
+        input {
+          width: 100%;
+          border: 1px solid #4a4a4a;
+          font-size: 12px;
+          padding: 0 15px;
+          border-radius: 0;
+          height: calc(1.5em + 0.75rem + 2px);
+          font-family: $textFontFamily;
+        }
       }
-    }
 
-    .textareaWrapper {
-      margin-bottom: 10px;
+      .textareaWrapper {
+        margin-bottom: 10px;
 
-      textarea {
-        padding: 15px;
-        width: 100%;
-        height: 133px;
-        font-family: $textFontFamily;
+        textarea {
+          padding: 15px;
+          width: 100%;
+          height: 133px;
+          font-family: $textFontFamily;
+        }
       }
-    }
 
-    @media (max-width: 910px) {
-      width: 400px;
-    }
-    @media (max-width: 577px) {
-      width: 300px;
-    }
-    @media (max-width: 460px) {
-      width: 250px;
-    }
+      @media (max-width: 910px) {
+        width: 400px;
+      }
+      @media (max-width: 577px) {
+        width: 300px;
+      }
+      @media (max-width: 460px) {
+        width: 250px;
+      }
 
+    }
   }
 }
+
+
 
 
 

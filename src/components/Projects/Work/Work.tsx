@@ -1,6 +1,5 @@
 import React, {FC} from 'react';
 import style from './Work.module.scss'
-import styleContainer from "../../../common/styles/Container.module.scss";
 import Button from "../../../common/Button/Button";
 
 type PropsType ={
@@ -21,8 +20,8 @@ const Work: FC<PropsType> = (props) => {
                 {/*<a href={'#'}>Посмотреть</a>*/}
                 <Button title={'Посмотреть'} style={styleButton}/>
             </div>
-            <h5 className={styleContainer.itemTitle}>{props.title}</h5>
-            <span className={styleContainer.description}>{props.description}</span>
+            <h5 className={style.itemTitle}>{props.title}</h5>
+            <span className={style.description}>{props.description}</span>
         </div>
     );
 };

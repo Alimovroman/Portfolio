@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Projects.module.scss';
-import styleContainer from '../../common/styles/Container.module.scss';
 import Work from "./Work/Work";
 import Title from "../../common/Title/Title";
 import socialNetworkImg from '../../assets/images/social-network.jpg'
@@ -16,7 +15,7 @@ const todolist = {
 const Projects = () => {
     return (
         <div className={style.projectsBlock}>
-            <div className={`${styleContainer.container} ${style.projectsContainer}`}>
+            <div className={style.projectsContainer}>
                 <Title title={'Мои работы'} />
                 <div className={style.projects}>
                     <Work title={'Social Network'}

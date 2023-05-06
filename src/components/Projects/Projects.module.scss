@@ -1,14 +1,14 @@
+@import "../../common/styles/sass/mixins";
+
 .projectsBlock {
   /*min-height: 100vh;*/
   .projectsContainer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include container();
+    @include flex(column, center, center, wrap);
     padding: 70px 0;
 
     .projects {
       width: 100%;
-      //background-color: #3f636e;
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;

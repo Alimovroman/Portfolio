@@ -1,8 +1,10 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
 .skillBlock {
     /*width: 377px;*/
     width: 50%;
     height: 382px;
-    /*background-color: #4c8ba2;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,10 +14,16 @@
     .icon {
         width: 80%;
         height: 85%;
-        /*background-color: #e39090;*/
-        /*overflow: hidden;*/
         box-shadow: 2px 2px 7px rgba(0,0,0,.2);
         border: 15px solid #fff;
+    }
+    .itemTitle {
+        @include text($textColor, 18px, 1.5em, 700, $titleFontFamily);
+
+    }
+    .description {
+        @include text($descriptionColor, 15px, 1.8em, 400, $textFontFamily);
+        font-style: italic
     }
     @media (max-width: 750px) {
         height: 322px;

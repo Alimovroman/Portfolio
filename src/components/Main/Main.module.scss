@@ -2,23 +2,32 @@
 @import "../../common/styles/sass/variables";
 
 .mainBlock {
-    height: 100vh;
-    display: flex;
-    .mainContainer {
-        justify-content: space-around;
-        align-items: center;
-        .text {
-            width: 300px;
-            .aboutMeText {
-                @include text(grey, 15px, 28px, 400, $textFontFamily)
-            }
-        }
-        .photo {
-            background-color: #afa7a7;
-            width: 300px;
-            height: 400px;
-        }
+  height: 100vh;
+  display: flex;
+
+  .mainContainer {
+    @include container();
+    @include flex(row, space-around, center, wrap);
+
+    .text {
+      width: 300px;
+
+      .description {
+        @include text($descriptionColor, 15px, 1.8em, 400, $textFontFamily);
+        font-style: italic;
+      }
+
+      .aboutMeText {
+        @include text(grey, 15px, 28px, 400, $textFontFamily)
+      }
     }
+
+    .photo {
+      background-color: #afa7a7;
+      width: 300px;
+      height: 400px;
+    }
+  }
 }
 
 

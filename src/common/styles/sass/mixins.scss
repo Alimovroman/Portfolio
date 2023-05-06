@@ -1,7 +1,21 @@
+@import "./variables";
+
 @mixin text ($color, $fontSize, $lineHeight, $fontWeight, $fontFamily) {
   color: $color;
   font-size: $fontSize;
   line-height: $lineHeight;
   font-weight: $fontWeight;
   font-family: $fontFamily;
+}
+@mixin container() {
+  width: 80%;
+  margin: 0 auto;
+  background-color: $bgColorContainer;
+}
+@mixin flex($direction, $justifyContent, $alignItems, $wrap) {
+  display: flex;
+  flex-direction: $direction ;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $wrap;
 }
