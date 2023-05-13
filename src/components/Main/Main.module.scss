@@ -1,22 +1,23 @@
 @import "../../common/styles/sass/mixins";
 @import "../../common/styles/sass/variables";
 
+
+
 .mainBlock {
   height: 100vh;
   display: flex;
-  //position: relative;
-
+  position: relative;
   .particles {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    //background-color: black;
-    //background-repeat: no-repeat;
-    //background-size: cover;
-    //background-position: 50% 50%;
+    //width: 100%;
+    //height: 100%;
     opacity: 0.3;
-  }
+    //top: 0;
+    //left: 0;
+    //right: 0;
+    //bottom: 0;
 
+  }
   .mainContainer {
     @include container();
     @include flex(row, space-around, center, wrap);
@@ -24,24 +25,29 @@
 
     .text {
       width: 300px;
-
       .description {
         @include text($descriptionColor, 15px, 1.8em, 400, $textFontFamily);
         font-style: italic;
       }
-
-      .aboutMeText {
-        @include text(grey, 15px, 28px, 400, $textFontFamily);
-
+      span {
+        div, span{
+          @include text(grey, 15px, 28px, 400, $textFontFamily);
+        }
       }
     }
-
     .photo {
-      background-color: #afa7a7;
-      width: 300px;
-      height: 400px;
+      //background-color: #afa7a7;
+      //width: 300px;
+      //height: 400px;
+
+      .avatar {
+        width: 300px;
+        height: 400px;
+        position: relative;
+      }
     }
   }
+
 }
 
 

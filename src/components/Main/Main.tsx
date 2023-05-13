@@ -1,13 +1,28 @@
-import React, {useCallback} from 'react';
+import React, {FC, useCallback} from 'react';
 import style from './Main.module.scss'
 import Title from "../../common/Title/Title";
 import Particles from "react-tsparticles";
 import type {Container, Engine} from "tsparticles-engine";
 import {loadFull} from "tsparticles";
+import avatar from '../../assets/images/avatar.jpeg'
+import ReactTypingEffect from 'react-typing-effect';
+import {Tilt} from 'react-tilt';
 
-const particlesOpt = {}
+const defaultOptions = {
+    reverse: false,  // reverse the tilt direction
+    max: 35,     // max tilt rotation (degrees)
+    perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+    scale: 1.1,    // 2 = 200%, 1.5 = 150%, etc..
+    speed: 1000,   // Speed of the enter/exit transition
+    transition: true,   // Set a transition on enter/exit.
+    axis: null,   // What axis should be disabled. Can be X or Y.
+    reset: true,    // If the tilt effect has to be reset on exit.
+    easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+}
 
-const Main = () => {
+const Main: FC = () => {
+
+
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
 
@@ -23,83 +38,85 @@ const Main = () => {
 
     return (
         <div className={style.mainBlock}>
-            <Particles id={"tsparticles"}
-                       className={style.particles}
-                       options={
-                           {
-                               // fpsLimit: 120,
-                               // interactivity: {
-                               //
-                               //     modes: {
-                               //         push: {
-                               //             quantity: 4,
-                               //         },
-                               //         repulse: {
-                               //             distance: 200,
-                               //             duration: 0.4,
-                               //         },
-                               //     },
-                               // },
-                               fullScreen: {
-                                   enable: false,
+            <div>
+                <Particles id={"tsparticles"}
+                           className={style.particles}
+                           options={
+                               {
+                                   fullScreen: {
+                                       zIndex: -10,
+                                       enable: false
                                    },
-                               particles: {
-                                   color: {
-                                       value: "#ffffff",
-                                   },
-                                   links: {
-                                       color: "#ffffff",
-                                       distance: 150,
-                                       enable: true,
-                                       opacity: 0.5,
-                                       width: 1,
-                                   },
-                                   collisions: {
-                                       enable: true,
-                                   },
-                                   move: {
-                                       // directions: "none",
-                                       enable: true,
-                                       outModes: {
-                                           default: "bounce",
+                                   fpsLimit: 120,
+                                   particles: {
+                                       color: {
+                                           value: "#ffffff",
                                        },
-                                       random: false,
-                                       speed: 4,
-                                       straight: false,
-                                   },
-                                   number: {
-                                       density: {
+                                       links: {
+                                           color: "#ffffff",
+                                           distance: 150,
                                            enable: true,
-                                           area: 800,
+                                           opacity: 0.5,
+                                           width: 1,
                                        },
-                                       value: 80,
+                                       move: {
+                                           direction: "none",
+                                           enable: true,
+                                           outModes: {
+                                               default: "bounce",
+                                           },
+                                           random: false,
+                                           speed: 1,
+                                           straight: false,
+                                       },
+                                       number: {
+                                           density: {
+                                               enable: true,
+                                               area: 800,
+                                           },
+                                           value: 80,
+                                       },
+                                       opacity: {
+                                           value: 0.5,
+                                       },
+                                       shape: {
+                                           type: "circle",
+                                       },
+                                       size: {
+                                           value: {min: 1, max: 5},
+                                       },
+
+                                       zIndex: {
+                                           random: false,
+                                           opacityRate: 0.7
+                                       }
                                    },
-                                   opacity: {
-                                       value: 0.5,
-                                   },
-                                   shape: {
-                                       type: "circle",
-                                   },
-                                   size: {
-                                       value: {min: 1, max: 5},
-                                   },
-                               },
-                               detectRetina: true
+
+                                   detectRetina: true,
+                               }
+
                            }
-                       }
-                       init={particlesInit}
-                       loaded={particlesLoaded}
-            />
+
+                           init={particlesInit}
+                           loaded={particlesLoaded}
+                />
+            </div>
             <div className={style.mainContainer}>
+
                 <div className={style.text}>
                     <span className={style.description}>Hi There</span>
                     <Title title={'I`m Roman Alimov'} titleColor={'#fff'}/>
-                    <p className={style.aboutMeText}>Frontend developer.</p>
+                    <ReactTypingEffect
+                        text={["Frontend developer."]}
+                    />
                 </div>
-                <div className={style.photo}>
-                    <img src={'#'} alt={'Photo'}/>
-                </div>
+                <Tilt options={defaultOptions}>
+                    <div className={style.photo}>
+                        <img src={avatar} alt={'Photo'} className={style.avatar}/>
+                    </div>
+                </Tilt>
             </div>
+
         </div>
     );
 };
