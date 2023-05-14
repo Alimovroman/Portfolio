@@ -14,7 +14,7 @@ const todolist = {
 
 const Projects = () => {
     return (
-        <div className={style.projectsBlock}>
+        <div id={'projects'} className={style.projectsBlock}>
             <div className={style.projectsContainer}>
                 <Title title={'Мои работы'} />
                 <div className={style.projects}>

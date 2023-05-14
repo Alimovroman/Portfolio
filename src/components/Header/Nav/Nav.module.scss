@@ -11,9 +11,13 @@
         @include text($textColor, 15px, 28px, 700, $textFontFamily);
         text-decoration: none;
         transition: color 0.4s ease-out;
+        cursor: pointer;
         &:hover {
             color: $textColorHover;
         }
     }
+    //.active {
+    //    color: $textColorHover;
+    //}
 }
 

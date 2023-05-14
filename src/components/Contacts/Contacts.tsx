@@ -5,7 +5,7 @@ import Button from "../../common/Button/Button";
 
 const Contacts = () => {
     return (
-        <div className={style.contactsBlock}>
+        <div id={'contacts'} className={style.contactsBlock}>
             <div className={style.contactsContainer}>
                 <Title title={'Contacts'} />
                 <form action={''} className={style.form}>

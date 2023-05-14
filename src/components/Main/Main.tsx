@@ -37,7 +37,7 @@ const Main: FC = () => {
     }, []);
 
     return (
-        <div className={style.mainBlock}>
+        <div id={"main"} className={style.mainBlock}>
             <div>
                 <Particles id={"tsparticles"}
                            className={style.particles}
