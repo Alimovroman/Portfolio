@@ -9,7 +9,7 @@ const FindJob = () => {
             <div className={style.FindJobContainer}>
                 {/*<h2 className={styleContainer.title}>Рассматриваю варианты удаленной работы</h2>*/}
                <Title title={'Рассматриваю варианты удаленной работы'} />
-               <Button title={'Нанять меня'} />
+               {/*<Button title={'Нанять меня'} />*/}
                 {/*<button className={styleContainer.button}>Нанять меня</button>*/}
             </div>
         </div>

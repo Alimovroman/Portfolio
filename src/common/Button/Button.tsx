@@ -6,7 +6,7 @@ type Props = {
     style?: {
         background: string
     }
-    callBack?: () => void
+    path?: string
 }
 const Button: FC<Props> = (props) => {
     return (
@@ -14,7 +14,7 @@ const Button: FC<Props> = (props) => {
             <button className={style.button}
                     style={props.style}
                     type={"submit"}
-                    onClick={props.callBack}
+                    onClick={() => window.open(props.path)}
             >{props.title}
             </button>
         </div>

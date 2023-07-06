@@ -8,6 +8,7 @@ type PropsType ={
     style: {
         backgroundImage: string
     }
+    path: string
 }
 
 const styleButton = {
@@ -18,7 +19,7 @@ const Work: FC<PropsType> = (props) => {
         <div className={style.workItem}>
             <div className={style.imageContainer} style={props.style}>
                 {/*<a href={'#'}>Посмотреть</a>*/}
-                <Button title={'Посмотреть'} style={styleButton}/>
+                <Button title={'Посмотреть'} style={styleButton} path={props.path}/>
             </div>
             <h5 className={style.itemTitle}>{props.title}</h5>
             <span className={style.description}>{props.description}</span>

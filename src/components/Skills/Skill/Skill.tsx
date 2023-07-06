@@ -1,16 +1,19 @@
 import React, {FC} from 'react';
-import style from './Skill.module.scss'
+import s from './Skill.module.scss'
 
 type PropsType = {
     title: string
     info: string
+    style?: {
+        backgroundImage: string
+    }
 }
-const Skill: FC<PropsType> = ({title, info}) => {
+const Skill: FC<PropsType> = ({title, info, style}) => {
     return (
-        <div className={style.skillBlock}>
-            <div className={style.icon}></div>
-            <span className={style.itemTitle}>{title}</span>
-            <span className={style.description}>
+        <div className={s.skillBlock}>
+            <div className={s.icon} style={style}></div>
+            <span className={s.itemTitle}>{title}</span>
+            <span className={s.description}>
                 {info}
             </span>
         </div>
