@@ -16,6 +16,8 @@
         height: 85%;
         box-shadow: 2px 2px 7px rgba(0,0,0,.2);
         border: 15px solid #fff;
+        background-repeat: no-repeat;
+        background-size:100% 100%;
     }
     .itemTitle {
         @include text($textColor, 18px, 1.5em, 700, $titleFontFamily);

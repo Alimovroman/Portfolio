@@ -4,7 +4,7 @@ import Title from "../../common/Title/Title";
 import Particles from "react-tsparticles";
 import type {Container, Engine} from "tsparticles-engine";
 import {loadFull} from "tsparticles";
-import avatar from '../../assets/images/avatar.jpeg'
+import avatar from '../../assets/images/avatar.jpg'
 import ReactTypingEffect from 'react-typing-effect';
 import {Tilt} from 'react-tilt';
 
