@@ -39,15 +39,15 @@ const Skills = () => {
                 {/*<h2 className={styleContainer.title}>Мои Скиллы</h2>*/}
                 <Title title={'Мои Скиллы'} />
                 <div className={style.skills}>
-                    <Skill title={'React'} info={'Skill info'} style={reactBgImage}/>
-                    <Skill title={'Redux'} info={'Skill info'} style={reduxBgImage}/>
-                    <Skill title={'Rest Api'} info={'Skill info'} style={restApiBgImage}/>
-                    <Skill title={'TypeScript'} info={'Skill info'} style={tsBgImage}/>
-                    <Skill title={'JavaScript'} info={'Skill info'} style={jsBgImage}/>
-                    <Skill title={'Git'} info={'Skill info'} style={gitBgImage}/>
-                    <Skill title={'HTML'} info={'Skill info'} style={htmlBgImage}/>
-                    <Skill title={'CSS'} info={'Skill info'} style={cssBgImage}/>
-                    <Skill title={'SASS'} info={'Skill info'} style={sassBgImage}/>
+                    <Skill title={'React'} style={reactBgImage}/>
+                    <Skill title={'Redux'} style={reduxBgImage}/>
+                    <Skill title={'Rest Api'} style={restApiBgImage}/>
+                    <Skill title={'TypeScript'} style={tsBgImage}/>
+                    <Skill title={'JavaScript'} style={jsBgImage}/>
+                    <Skill title={'Git'} style={gitBgImage}/>
+                    <Skill title={'HTML'} style={htmlBgImage}/>
+                    <Skill title={'CSS'} style={cssBgImage}/>
+                    <Skill title={'SASS'} style={sassBgImage}/>
                 </div>
             </div>
         </div>

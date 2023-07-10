@@ -27,18 +27,16 @@ const Projects = () => {
                 <Title title={'Мои работы'}/>
                 <div className={style.projects}>
                     <Work title={'Social Network'}
-                          description={'ololololo lol ol o olo'}
                           style={socialNetwork}
                           path={'https://alimovroman.github.io/samurai-way-main/'}
                     />
                     <Work title={'Todolist'}
-                          description={'ololololo lol ol o olo'}
                           style={todolist}
                           path={'https://alimovroman.github.io/todo-list/'}
                     />
-                    <Work title={'Pizza'} description={'asdad'} style={pizza}
+                    <Work title={'Pizza'} style={pizza}
                           path={'https://alimovroman.github.io/React-Pizza/'}/>
-                    <Work title={'Cards'} description={'asdad'} style={cards}
+                    <Work title={'Cards'} style={cards}
                           path={'https://alimovroman.github.io/cards/'}/>
                 </div>
             </div>

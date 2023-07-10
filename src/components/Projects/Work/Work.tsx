@@ -4,7 +4,6 @@ import Button from "../../../common/Button/Button";
 
 type PropsType ={
     title: string
-    description: string
     style: {
         backgroundImage: string
     }
@@ -22,7 +21,6 @@ const Work: FC<PropsType> = (props) => {
                 <Button title={'Посмотреть'} style={styleButton} path={props.path}/>
             </div>
             <h5 className={style.itemTitle}>{props.title}</h5>
-            <span className={style.description}>{props.description}</span>
         </div>
     );
 };
